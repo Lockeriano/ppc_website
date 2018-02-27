@@ -1,12 +1,16 @@
 $darkgray: #373737
 $red: #b90a15
+$lightgray: #9aa9bc
+
+html
+  font-size: 62.5%
 
 h1,h2,h3,h4,h5,h6,p,a
   font-family: 'Helvetica Neue', sans-serif
 
 header
   position: relative
-  background: url(../img/bg_image.jpg) no-repeat center fixed
+  background: url(../img/background_img.jpg) no-repeat center fixed
   border-bottom: 1px solid #000000
   -webkit-background-size: cover
   -moz-background-size: cover
@@ -14,26 +18,23 @@ header
   background-size: cover
   width: 100%
   height: 100vh
-  nav
-    position: fixed
-    width: 100%
   img
    margin: 2rem 0
 
   .links
     text-align: right
     margin: 2rem 0
-  li
-    color: #000000
-    display: inline
-    list-style: none
-    cursor: pointer
-    margin: 0 .5rem
-  a
-   color: inherit
-   margin: 5rem 0
-   &:hover
-    text-decoration: none
+    li
+      color: #000000
+      display: inline
+      list-style: none
+      cursor: pointer
+      margin: 0 1rem
+    a
+     color: inherit
+     font-size: 1.6rem
+     &:hover
+      text-decoration: none
 
 .theme
   display: flex
@@ -41,11 +42,11 @@ header
   justify-content: center
   align-items: center
   text-align: center
-  margin: 200px
+  margin: 150px
   h1
     display: inline-block
     position: relative
-    font-size: 2.4rem
+    font-size: 4.2rem
     margin: 1rem 0
   &:after
     content: ""
@@ -55,7 +56,7 @@ header
     bottom: 64%
     border-bottom: 2px solid $red
   p
-    font-size: 1.4rem
+    font-size: 2.4rem
     font-weight: 400
     color: $darkgray
     margin-top: 50px
@@ -73,3 +74,24 @@ header
     background-color: transparent
     cursor: pointer
     margin-top: 50px
+    &:hover
+      color: white
+      background-color: $red
+
+#services
+  display: flex
+  flex-direction: row
+  justify-content: center
+  align-items: center
+  text-align: center
+  margin: 50px 0
+  .diagram-img
+    width: 25rem
+    height: auto
+    padding: 3rem
+  h2
+    font-size: 2.6rem
+    font-weight: 700
+  p
+    font-size: 1.6rem
+    color: $darkgray
