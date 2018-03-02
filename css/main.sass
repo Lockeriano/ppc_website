@@ -1,7 +1,7 @@
 $darkgray: #373737
 $red: #b90a15
 $lightred: #ee505c
-$lightgray: #9aa9bc
+$lightgray: #b3b3b3
 
 html
   font-size: 62.5%
@@ -14,9 +14,6 @@ header
   position: relative
   background: url(../img/background_img.jpg) no-repeat center fixed
   border-bottom: 1px solid #000000
-  -webkit-background-size: cover
-  -moz-background-size: cover
-  -o-background-size: cover
   background-size: cover
   width: 100%
   height: 100vh
@@ -88,6 +85,9 @@ header
   text-align: center
   margin: 100px 0
 
+  .idea-bulp-icon
+    fill: linear-gradient(red, yellow, blue) !important
+
   img
     width: 10rem
     height: auto
@@ -118,13 +118,14 @@ header
     left: 2rem
     margin-right: -50%
   p
-    font-size: 1.6rem
+    font-size: 1.8rem
 
   .column
     padding: 5rem
 
   h3
     font-size: 2.6rem
+    margin-bottom: 10px
 
 #services
   display: flex
@@ -133,6 +134,122 @@ header
   align-items: center
   text-align: center
   margin: 100px 0
+
+  .services-text
+    margin-bottom: 50px
+    h2
+      font-size: 4.2rem
+      font-weight: 700
+      overflow: hidden
+      text-align: center
+      margin-bottom: 50px
+
+    h2:before,
+    h2:after
+      background-color: #b90a15
+      content: ""
+      display: inline-block
+      height: 2px
+      position: relative
+      vertical-align: middle
+      width: 5%
+
+    h2:before
+      right: 2rem
+      margin-left: -50%
+
+    h2:after
+      left: 2rem
+      margin-right: -50%
+
+    p
+      font-size: 1.6rem
+
+  .thumb
+    display: flex
+    flex-direction: column
+    align-content: center
+    align-items: center
+    justify-content: center
+    height: 150px
+    border: 2px solid white
+
+    h3
+      font-size: 2.8rem
+      color: $darkgray
+    p
+      font-size: 1.8rem
+      color: $darkgray
+
+  .services-big
+    display: flex
+    flex-direction: row
+    justify-content: center
+    align-content: center
+    align-items: center
+    height: 300px
+
+    &:first-child
+      background: linear-gradient(90deg, #d7d7d7, white)
+
+    &:last-child
+      background: linear-gradient(90deg, white, #d7d7d7)
+
+    .service-icon
+      width: 20rem
+      height: auto
+      margin: 3rem
+
+    h2
+      font-size: 4.8rem
+
+      &:first-child
+        margin-right: 20rem
+
+      &:last-child
+        margin-left: 20rem
+
+#next
+  display: flex
+  flex-direction: row
+  justify-content: center
+  align-items: center
+  text-align: center
+  margin: 100px 0
+
+  .services-text
+    h2
+      font-size: 4.2rem
+      font-weight: 700
+      overflow: hidden
+      text-align: center
+      margin-bottom: 50px
+
+    h2:before,
+    h2:after
+      background-color: #b90a15
+      content: ""
+      display: inline-block
+      height: 2px
+      position: relative
+      vertical-align: middle
+      width: 5%
+
+    h2:before
+      right: 2rem
+      margin-left: -50%
+
+    h2:after
+      left: 2rem
+      margin-right: -50%
+
+  img
+    width: 15rem
+    height: auto
+    margin: 3rem
+
+  .bg-color
+    background-color: rgba(185, 10, 21, 0.8)
 
   .diagram-img
     width: 25rem
@@ -143,3 +260,31 @@ header
     font-size: 2.6rem
   p
     font-size: 1.6rem
+
+#works
+  .ex-work-1
+    position: relative
+    height: 600px
+    background: url(../img/ex-work-1.jpg) no-repeat center
+    background-size: cover
+    .layer
+      background-color: rgba(185, 10, 21, 0.7)
+      position: absolute
+      top: 0
+      left: 0
+      width: 100%
+      height: 100%
+  .ex-work-2
+    position: relative
+    height: 600px
+    background: url(../img/ex-work-2.jpg) no-repeat center
+    background-size: cover
+    .layer
+      background-color: rgba(185, 10, 21, 0.7)
+      position: absolute
+      top: 0
+      left: 0
+      width: 100%
+      height: 100%
+  .gap
+    padding: 0
