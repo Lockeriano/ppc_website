@@ -143,21 +143,23 @@ header {
       font-size: 1.8rem;
       color: #373737; }
   #services .social-media-big {
-    background: url(../img/social-media.png) no-repeat center;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-content: center;
     align-items: center;
     height: 300px; }
+    #services .social-media-big img {
+      width: 100%; }
   #services .position-big {
-    background: url(../img/positioning.png) no-repeat center;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-content: center;
     align-items: center;
     height: 300px; }
+    #services .position-big img {
+      width: 100%; }
     #services .position-big .service-icon {
       width: 15rem; }
     #services .position-big h2 {
