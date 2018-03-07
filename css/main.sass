@@ -50,32 +50,15 @@ header
   &:after
     content: ""
     position: absolute
-    width: 15%
-    height: 1px
-    bottom: 60%
-    border-bottom: 2px solid $red
+    width: 10%
+    top: 1px
+    bottom: 52%
+    border-bottom: 3px solid $red
   p
     font-size: 2.4rem
     font-weight: 400
     color: $darkgray
-    margin-top: 50px
-
-  button
-    -webkit-border-radius: 39
-    -moz-border-radius: 39
-    border-radius: 39px
-    font-family: "Open Sans"
-    color: #b90a15
-    font-size: 16px
-    padding: 10px 20px 10px 20px
-    border: solid #b90a15 2px
-    text-decoration: none
-    background-color: transparent
-    cursor: pointer
-    margin-top: 50px
-    &:hover
-      color: white
-      background-color: $red
+    margin-top: 40px
 
 #about
   display: flex
@@ -206,9 +189,10 @@ header
       font-size: 3.8rem
 
 #contact
-  background: url(../img/bg.jpg) no-repeat top center fixed
-  height: 600px
+  background: $darkgray
+  height: 700px
   position: relative
+  text-align: center
 
   .contact-layer
     position: absolute
@@ -217,7 +201,7 @@ header
     background-color: rgba(32, 32, 32, .6)
 
   h2
-    color: $lightgray
+    color: white
     font-size: 4.2rem
     font-weight: 700
     overflow: hidden
@@ -244,3 +228,44 @@ header
 
   p
     font-size: 1.6rem
+    color: $lightgray
+
+  h3
+    font-size: 2.8rem
+    color: white
+
+  input,
+  textarea
+    font-family: 'Helvetica Neue', sans-serif
+    background-color: transparent
+    border: none
+    border-bottom: 2px solid $lightgray
+    display: block
+    padding: 0
+    width: 100%
+    margin: 40px 0
+    font-size: 2rem
+    color: white
+    &:focus
+      outline: none
+    &::-webkit-input-placeholder
+      opacity: .4
+    &::-moz-placeholder
+      opacity: .4
+    &::-ms-input-placeholder
+      opacity: .4
+    &::-moz-placeholder
+      opacity: .4
+
+  textarea
+    max-height: 150px
+    resize: none
+
+  input[type=submit]
+    border: 1px solid $red
+    background-color: $red
+    cursor: pointer
+    margin: 0 auto
+    width: 25%
+    height: 5rem
+    margin-top: 50px
