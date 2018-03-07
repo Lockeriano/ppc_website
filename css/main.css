@@ -7,7 +7,7 @@ h1, h2, h3, h4, h5, h6, p, a {
 
 header {
   position: relative;
-  background: url(../img/background_img.jpg) no-repeat center fixed;
+  background: url(../img/bg.jpg) no-repeat top fixed;
   border-bottom: 1px solid #000000;
   background-size: cover;
   width: 100%;
@@ -35,7 +35,7 @@ header {
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin: 200px 0; }
+  margin: 150px 0; }
   .theme h1 {
     position: relative;
     display: inline-block;
@@ -158,96 +158,57 @@ header {
     #services .thumb p {
       font-size: 1.8rem;
       color: #373737; }
-  #services .services-big {
+  #services .social-media-big {
+    background: url(../img/social-media.png) no-repeat center;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-content: center;
     align-items: center;
     height: 300px; }
-    #services .services-big:first-child {
-      background: linear-gradient(90deg, #d7d7d7, white); }
-    #services .services-big:last-child {
-      background: linear-gradient(90deg, white, #d7d7d7); }
-    #services .services-big .service-icon {
-      width: 20rem;
-      height: auto;
-      margin: 3rem; }
-    #services .services-big h2 {
-      font-size: 4.8rem; }
-      #services .services-big h2:first-child {
-        margin-right: 20rem; }
-      #services .services-big h2:last-child {
-        margin-left: 20rem; }
+  #services .position-big {
+    background: url(../img/positioning.png) no-repeat center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    height: 300px; }
+    #services .position-big .service-icon {
+      width: 15rem; }
+    #services .position-big h2 {
+      font-size: 3.8rem; }
 
-#next {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  margin: 100px 0; }
-  #next .services-text h2 {
+#contact {
+  background: url(../img/bg.jpg) no-repeat top center fixed;
+  height: 600px;
+  position: relative; }
+  #contact .contact-layer {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(32, 32, 32, 0.6); }
+  #contact h2 {
+    color: #b3b3b3;
     font-size: 4.2rem;
     font-weight: 700;
     overflow: hidden;
     text-align: center;
-    margin-bottom: 50px; }
-  #next .services-text h2:before,
-  #next .services-text h2:after {
+    margin: 50px 0; }
+  #contact h2:before,
+  #contact h2:after {
     background-color: #b90a15;
     content: "";
     display: inline-block;
     height: 2px;
     position: relative;
     vertical-align: middle;
-    width: 5%; }
-  #next .services-text h2:before {
+    width: 4%; }
+  #contact h2:before {
     right: 2rem;
     margin-left: -50%; }
-  #next .services-text h2:after {
+  #contact h2:after {
     left: 2rem;
     margin-right: -50%; }
-  #next img {
-    width: 15rem;
-    height: auto;
-    margin: 3rem; }
-  #next .bg-color {
-    background-color: rgba(185, 10, 21, 0.8); }
-  #next .diagram-img {
-    width: 25rem;
-    height: auto;
-    padding: 3rem; }
-  #next h2 {
-    font-size: 2.6rem; }
-  #next p {
+  #contact p {
     font-size: 1.6rem; }
-
-#works .ex-work-1 {
-  position: relative;
-  height: 600px;
-  background: url(../img/ex-work-1.jpg) no-repeat center;
-  background-size: cover; }
-  #works .ex-work-1 .layer {
-    background-color: rgba(185, 10, 21, 0.7);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%; }
-
-#works .ex-work-2 {
-  position: relative;
-  height: 600px;
-  background: url(../img/ex-work-2.jpg) no-repeat center;
-  background-size: cover; }
-  #works .ex-work-2 .layer {
-    background-color: rgba(185, 10, 21, 0.7);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%; }
-
-#works .gap {
-  padding: 0; }

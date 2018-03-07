@@ -12,7 +12,7 @@ h1,h2,h3,h4,h5,h6,p,a
 
 header
   position: relative
-  background: url(../img/background_img.jpg) no-repeat center fixed
+  background: url(../img/bg.jpg) no-repeat top fixed
   border-bottom: 1px solid #000000
   background-size: cover
   width: 100%
@@ -41,7 +41,7 @@ header
   justify-content: center
   align-items: center
   text-align: center
-  margin: 200px 0
+  margin: 150px 0
   h1
     position: relative
     display: inline-block
@@ -181,7 +181,8 @@ header
       font-size: 1.8rem
       color: $darkgray
 
-  .services-big
+  .social-media-big
+    background: url(../img/social-media.png) no-repeat center
     display: flex
     flex-direction: row
     justify-content: center
@@ -189,102 +190,57 @@ header
     align-items: center
     height: 300px
 
-    &:first-child
-      background: linear-gradient(90deg, #d7d7d7, white)
-
-    &:last-child
-      background: linear-gradient(90deg, white, #d7d7d7)
+  .position-big
+    background: url(../img/positioning.png) no-repeat center
+    display: flex
+    flex-direction: row
+    justify-content: center
+    align-content: center
+    align-items: center
+    height: 300px
 
     .service-icon
-      width: 20rem
-      height: auto
-      margin: 3rem
+      width: 15rem
 
     h2
-      font-size: 4.8rem
+      font-size: 3.8rem
 
-      &:first-child
-        margin-right: 20rem
+#contact
+  background: url(../img/bg.jpg) no-repeat top center fixed
+  height: 600px
+  position: relative
 
-      &:last-child
-        margin-left: 20rem
-
-#next
-  display: flex
-  flex-direction: row
-  justify-content: center
-  align-items: center
-  text-align: center
-  margin: 100px 0
-
-  .services-text
-    h2
-      font-size: 4.2rem
-      font-weight: 700
-      overflow: hidden
-      text-align: center
-      margin-bottom: 50px
-
-    h2:before,
-    h2:after
-      background-color: #b90a15
-      content: ""
-      display: inline-block
-      height: 2px
-      position: relative
-      vertical-align: middle
-      width: 5%
-
-    h2:before
-      right: 2rem
-      margin-left: -50%
-
-    h2:after
-      left: 2rem
-      margin-right: -50%
-
-  img
-    width: 15rem
-    height: auto
-    margin: 3rem
-
-  .bg-color
-    background-color: rgba(185, 10, 21, 0.8)
-
-  .diagram-img
-    width: 25rem
-    height: auto
-    padding: 3rem
+  .contact-layer
+    position: absolute
+    height: 100%
+    width: 100%
+    background-color: rgba(32, 32, 32, .6)
 
   h2
-    font-size: 2.6rem
+    color: $lightgray
+    font-size: 4.2rem
+    font-weight: 700
+    overflow: hidden
+    text-align: center
+    margin: 50px 0
+
+  h2:before,
+  h2:after
+    background-color: #b90a15
+    content: ""
+    display: inline-block
+    height: 2px
+    position: relative
+    vertical-align: middle
+    width: 4%
+
+  h2:before
+    right: 2rem
+    margin-left: -50%
+
+  h2:after
+    left: 2rem
+    margin-right: -50%
+
   p
     font-size: 1.6rem
-
-#works
-  .ex-work-1
-    position: relative
-    height: 600px
-    background: url(../img/ex-work-1.jpg) no-repeat center
-    background-size: cover
-    .layer
-      background-color: rgba(185, 10, 21, 0.7)
-      position: absolute
-      top: 0
-      left: 0
-      width: 100%
-      height: 100%
-  .ex-work-2
-    position: relative
-    height: 600px
-    background: url(../img/ex-work-2.jpg) no-repeat center
-    background-size: cover
-    .layer
-      background-color: rgba(185, 10, 21, 0.7)
-      position: absolute
-      top: 0
-      left: 0
-      width: 100%
-      height: 100%
-  .gap
-    padding: 0
