@@ -22,7 +22,8 @@ header {
       display: inline;
       list-style: none;
       cursor: pointer;
-      margin: 0 1rem; }
+      margin: 0 1rem;
+      font-size: 2rem; }
     header .links a {
       color: inherit;
       font-size: 1.8rem; }
@@ -35,7 +36,7 @@ header {
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin: 150px 0; }
+  margin: 250px 0; }
   .theme h1 {
     position: relative;
     display: inline-block;
@@ -46,7 +47,7 @@ header {
     position: absolute;
     width: 10%;
     top: 1px;
-    bottom: 52%;
+    bottom: 50%;
     border-bottom: 3px solid #b90a15; }
   .theme p {
     font-size: 2.4rem;
@@ -127,7 +128,7 @@ header {
       left: 2rem;
       margin-right: -50%; }
     #services .services-text p {
-      font-size: 1.6rem; }
+      font-size: 1.8rem; }
   #services .service-item {
     margin: 1rem; }
     #services .service-item img {
@@ -141,8 +142,32 @@ header {
       font-size: 1.8rem; }
 
 #testimonials {
-  height: 400px;
+  height: 500px;
   text-align: center; }
+  #testimonials h2 {
+    font-size: 4.2rem;
+    font-weight: 700;
+    overflow: hidden;
+    text-align: center;
+    margin-bottom: 100px; }
+  #testimonials h2:before,
+  #testimonials h2:after {
+    background-color: #b90a15;
+    content: "";
+    display: inline-block;
+    height: 2px;
+    position: relative;
+    vertical-align: middle;
+    width: 5%; }
+  #testimonials h2:before {
+    right: 2rem;
+    margin-left: -50%; }
+  #testimonials h2:after {
+    left: 2rem;
+    margin-right: -50%; }
+  #testimonials h3 {
+    font-size: 2.4rem;
+    margin-bottom: 20px; }
   #testimonials .carousel-item {
     opacity: 1;
     animation-name: fadeInOpacity;
@@ -170,16 +195,41 @@ header {
       margin: 0 1rem;
       cursor: pointer; }
     #testimonials ol .active img {
-      transition: 0.3s;
+      transition: 0.2s;
       opacity: 1; }
-  #testimonials h2 {
-    font-size: 2.6rem;
-    margin: 2rem 0; }
   #testimonials blockquote {
     font-size: 1.8rem; }
   #testimonials img {
     height: 40px;
     opacity: .3; }
+
+#trusted-us {
+  text-align: center;
+  height: 300px;
+  min-height: 100%;
+  width: 100%; }
+  #trusted-us ul {
+    padding: 0; }
+  #trusted-us li {
+    list-style: none; }
+  #trusted-us .suga-container {
+    background: white;
+    max-width: 100%;
+    width: 1800px;
+    margin: 0 auto; }
+  #trusted-us .suga-slider-wrap {
+    overflow: hidden;
+    margin: 2rem; }
+  #trusted-us .suga-slider-group:before, #trusted-us .suga-slider-group:after {
+    content: " ";
+    display: table; }
+  #trusted-us .suga-slider-group:after {
+    clear: both; }
+  #trusted-us .suga-slide {
+    float: left;
+    position: relative;
+    margin-left: 0;
+    padding-right: 8px; }
 
 #contact {
   background: #373737;
