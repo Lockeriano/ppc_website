@@ -22,8 +22,7 @@ header {
       display: inline;
       list-style: none;
       cursor: pointer;
-      margin: 0 1rem;
-      font-size: 2rem; }
+      margin: 0 1rem; }
     header .links a {
       color: inherit;
       font-size: 1.8rem; }
