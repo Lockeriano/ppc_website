@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded',function(event){
   // array with texts to type in typewriter
-  var dataText = [ "Robimy najlepiej", "Robimy najszybciej", "Robimy najtaniej", "Jesteśmy PPC System"];
+  var dataText = [ "Najlepiej", "Najszybciej", "Najtaniej", "Jesteśmy PPC System"];
 
   // type one text in the typwriter
   // keeps calling itself until the text is finished
@@ -23,13 +23,13 @@ document.addEventListener('DOMContentLoaded',function(event){
   }
   // start a typewriter animation for a text in the dataText array
    function StartTextAnimation(i) {
-     if (typeof dataText[i] == 'undefined'){
+     if (typeof dataText[i] === 'undefined'){
         setTimeout(function() {
           StartTextAnimation(0);
-        }, 20000);
+        }, 15000);
      }
      // check if dataText[i] exists
-    if (i < dataText[i].length) {
+    if (i !== dataText[i]) {
       // text exists! start typewriter animation
      typeWriter(dataText[i], 0, function(){
        // after callback (and whole text has been animated), start next text

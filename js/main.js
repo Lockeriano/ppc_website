@@ -33,7 +33,7 @@ function indicatorSelection () {
         carouselQuote[2].className = 'carousel-item active'
       }
     }
-  }
+  }s
 }
 
 for (var i = 0; i < indicator.length; i++) {

@@ -7,8 +7,7 @@ h1, h2, h3, h4, h5, h6, p, a {
 
 header {
   position: relative;
-  background: url(../img/bg.jpg) no-repeat top fixed;
-  border-bottom: 1px solid #000000;
+  background: url(../img/bg_img.jpg) no-repeat center fixed;
   background-size: cover;
   width: 100%;
   height: 100vh; }
@@ -35,7 +34,7 @@ header {
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin: 250px 0; }
+  margin: 200px 0; }
   .theme h1 {
     position: relative;
     display: inline-block;
@@ -148,7 +147,8 @@ header {
     font-weight: 700;
     overflow: hidden;
     text-align: center;
-    margin-bottom: 100px; }
+    margin-top: 50px;
+    margin-bottom: 80px; }
   #testimonials h2:before,
   #testimonials h2:after {
     background-color: #b90a15;
@@ -166,7 +166,7 @@ header {
     margin-right: -50%; }
   #testimonials h3 {
     font-size: 2.4rem;
-    margin-bottom: 20px; }
+    margin-bottom: 10px; }
   #testimonials .carousel-item {
     opacity: 1;
     animation-name: fadeInOpacity;
@@ -284,7 +284,7 @@ header {
     font-family: 'Helvetica Neue', sans-serif;
     background-color: transparent;
     border: none;
-    border-bottom: 2px solid white;
+    border-bottom: 1px solid #b3b3b3;
     display: block;
     padding: 0;
     width: 100%;
