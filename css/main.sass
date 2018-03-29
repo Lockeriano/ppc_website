@@ -46,7 +46,7 @@ header
 
     .links
       text-align: right
-      margin: 2rem 0
+      padding: 2rem 0
 
       li
         color: $darkgray
@@ -61,15 +61,16 @@ header
         text-decoration: none
         font-size: 1.8rem
         cursor: pointer
-        padding-bottom: 1rem
+        padding: 2rem 0
 
       a:before
         content: ""
         position: absolute
         width: 100%
-        height: 2px
-        bottom: 0
+        height: 4px
+        top: 0
         left: 0
+        bottom: 0
         background-color: $red
         visibility: hidden
         -webkit-transform: scaleX(0)
@@ -122,9 +123,6 @@ header
   align-items: center
   text-align: center
   margin: 100px 0
-
-  .idea-bulp-icon
-    fill: linear-gradient(red, yellow, blue) !important
 
   img
     width: 10rem
@@ -204,7 +202,7 @@ header
       font-size: 1.8rem
 
   .service-item
-    margin: 1rem
+    padding: 1rem
 
     img
       width: 15rem
@@ -218,34 +216,6 @@ header
       font-size: 1.8rem
 
 #works
-  display: flex
-  justify-content: center
-  flex-wrap: wrap
-
-  .square
-    min-width: 0
-    margin: 5px
-
-    img
-      width: 400px
-      max-width: 100%
-      max-height: 400px
-
-    .mini-layer
-      position: absolute
-      top: 0
-      left: 0
-      width: 100%
-      height: 100%
-      background: rgba(0, 0, 0, 0.6)
-
-    h3
-      display: none
-
-  .nursery:hover
-    h3
-      display: block
-
   h2
     font-size: 4.2rem
     font-weight: 700
@@ -271,6 +241,53 @@ header
   h2:after
     left: 2rem
     margin-right: -50%
+
+  .flex-container
+    display: flex
+    justify-content: center
+    flex-wrap: wrap
+    margin-bottom: 50px
+    position: relative
+
+  .square
+    min-width: 0
+    margin: 5px
+    background-color: #000
+    position: relative
+    border: 1px solid black
+    text-align: center
+
+    img
+      width: 400px
+      max-width: 100%
+      max-height: 400px
+      cursor: pointer
+      transition: .2s
+      transition-timing-function: ease-in-out
+      &:hover
+        opacity: .75
+        filter: blur(8px)
+
+    .text-block
+      position: absolute
+      bottom: 10%
+      right: 10%
+      color: white
+
+    h3
+      font-size: 2.4rem
+      line-height: 3.2rem
+      display: none
+      position: absolute
+      top: 50%
+      left: 50%
+      transform: translate(-50%, -50%)
+      color: white
+
+    &:hover
+      h3
+        display: block
+
 
 #testimonials
   height: 500px
@@ -304,7 +321,7 @@ header
 
   h3
     font-size: 2.4rem
-    margin-bottom: 10px
+    margin-bottom: 25px
 
   .carousel-item
   	opacity: 1
@@ -327,7 +344,7 @@ header
     list-style: none
     text-align: center
     margin: 1rem 0
-    height: 100px
+    height: 50px
     padding: 0
 
     li
@@ -342,6 +359,8 @@ header
 
   blockquote
     font-size: 1.8rem
+    letter-spacing: 1px
+    min-height: 100px
 
   img
     height: 40px
@@ -366,7 +385,7 @@ header
 
   .suga-slider-wrap
     overflow: hidden
-    margin: 2rem
+    margin: 0rem
 
   .suga-slider-group
     &:before,
@@ -468,13 +487,36 @@ header
     resize: none
 
   input[type=submit]
-    border: 1px solid $red
-    background-color: $red
-    cursor: pointer
-    margin: 0 auto
+    font-family: 'Helvetica Neue', sans-serif
     width: 25%
-    height: 5rem
-    margin-top: 50px
+    border: none
+    font-family: inherit
+    font-size: inherit
+    color: inherit
+    background: #841219
+    cursor: pointer
+    padding: 15px 20px
+    display: inline-block
+    text-transform: uppercase
+    font-size: 1.6rem
+    color: white
+    font-weight: 700
+    outline: none
+    position: relative
+    -webkit-transition: all 0.3s
+    -moz-transition: all 0.3s
+    transition: all 0.3s
+    &:hover
+      background: $red
+
+  .btn-2
+    box-shadow: 0 6px #580808
+    -webkit-transition: none
+    -moz-transition: none
+    transition: none
+
+  .btn-2a
+    border-radius: 20px
 
   p
     color: $lightgray
