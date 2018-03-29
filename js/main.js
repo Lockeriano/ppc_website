@@ -1,5 +1,5 @@
 function initMap() {
-  var pos = {lat: 52.410140, lng: 16.923473};
+  var pos = {lat: 52.410101, lng: 16.923392};
   var map = new google.maps.Map(document.getElementById('map'), {
     zoom: 18,
     center: pos
@@ -33,9 +33,20 @@ function indicatorSelection () {
         carouselQuote[2].className = 'carousel-item active'
       }
     }
-  }s
+  }
 }
 
 for (var i = 0; i < indicator.length; i++) {
   indicator[i].addEventListener('click', indicatorSelection)
 }
+
+window.onscroll = function() {fixedNavbar()};
+
+function fixedNavbar() {
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    document.querySelector("nav").className = ("navbar-fixed");
+  }
+  else {
+    document.querySelector("nav").className = ("");
+  }
+};
